@@ -20,4 +20,4 @@ while s:
         stack.append(p)
 
 
-print(1 if len(stack) == 0 else 0)
+# print(1 if len(stack) == 0 else 0)
