@@ -8,6 +8,7 @@ def calculateTemperature(temperatures):
         else:
             # 스택 top 요소가 현재 온도보다 낮으면
             # 스택 top 요소 pop 해주고, 스택 top 온도가 해당 온도보다 같거나 낮을 때 까지 계속 반복
+            # stack 이 비어있지 않는 조건을 처음에 적용하지 않았었음.
             while stack and stack[-1][1] < t:
                 # 스택 top 요소 pop (해당 인덱스 = 날짜, 온도)
                 # 필요한 것은 날짜이므로 날짜만 사용
@@ -20,11 +21,6 @@ def calculateTemperature(temperatures):
             # 스택에 해당 온도 push
             stack.append((index, t))
     return answer
-
-
-
-
-
 
 
 input1 = [73, 74, 75, 71, 69, 72, 76, 73]
