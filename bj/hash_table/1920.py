@@ -52,7 +52,6 @@ A = list(map(int, stdin.readline().split()))
 A.sort()
 M = stdin.readline()
 data = list(map(int, stdin.readline().split()))
-
 result = []
 
 
