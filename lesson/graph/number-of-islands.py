@@ -12,8 +12,7 @@ def numIslands(grid):
         dy = [0, 0, -1, 1]
 
         visited[x][y] = True
-        queue = deque()
-        queue.append((x, y))
+        queue = deque([(x, y)])
         while queue:
             cur_x, cur_y = queue.popleft()
             for i in range(4):
