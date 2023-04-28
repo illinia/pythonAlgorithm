@@ -1,9 +1,7 @@
-n = int(input())
+from sys import stdin
+n = int(stdin.readline())
 
-command_list = []
-
-for _ in range(n):
-    command_list.append(input().split())
+command_list = [list(map(str, stdin.readline().split())) for _ in range(n)]
 
 stack = []
 
